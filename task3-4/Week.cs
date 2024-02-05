@@ -10,7 +10,25 @@ namespace task3_4
     {
         public void Print()
         {
-            Console.WriteLine("Monday, Thursday, Wednesday, Thursday, Friday, Saturday, Sunday");
+            Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}, {6}",
+                DayOfWeek.Monday,
+                DayOfWeek.Tuesday,
+                DayOfWeek.Wednesday,
+                DayOfWeek.Thursday,
+                DayOfWeek.Friday,
+                DayOfWeek.Saturday,
+                DayOfWeek.Sunday);
+        }
+
+        enum DayOfWeek
+        {
+            Monday, 
+            Tuesday, 
+            Wednesday, 
+            Thursday, 
+            Friday, 
+            Saturday, 
+            Sunday
         }
     }
 }
