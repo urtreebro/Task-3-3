@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace polymorphism
+namespace task3_4
 {
-    abstract class ArrayBase
+    abstract class ArrayBase : IPrinter, IBase
     {
         protected bool userInput = false;
 
@@ -30,7 +30,7 @@ namespace polymorphism
 
         protected abstract void UserInput();
 
-        public abstract void PrintArray();
+        public abstract void Print();
 
         public abstract double FindAverage();
 

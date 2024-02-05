@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace polymorphism
+namespace task3_4
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ArrayBase[] allArrays = new ArrayBase[3];
+            IBase[] allArrays = new ArrayBase[3];
 
             Random rnd = new();
 
@@ -23,11 +23,13 @@ namespace polymorphism
             JaggedArray jaggedarray = new();
             allArrays[2] = jaggedarray;
 
-            foreach (ArrayBase array in allArrays)
+            Console.WriteLine("IBase");
+
+            foreach (IBase array in allArrays)
             {
                 Console.WriteLine($"Average: {array.FindAverage()} \n");
 
-                array.PrintArray();
+                array.Print();
 
                 Console.WriteLine();
 
@@ -35,9 +37,26 @@ namespace polymorphism
 
                 Console.WriteLine("Refilled array\n");
 
-                array.PrintArray();
+                array.Print();
 
                 Console.WriteLine();
+            }
+            IPrinter[] printers = new IPrinter[4];
+       
+            printers[0] = onedimarray;
+            
+            printers[1] = twodimarray;
+            
+            printers[2] = jaggedarray;
+
+            Week week = new();
+            printers[3] = week;
+
+            Console.WriteLine("IPrinter");
+
+            foreach (IPrinter printer in printers)
+            {
+                printer.Print();
             }
         }
     }

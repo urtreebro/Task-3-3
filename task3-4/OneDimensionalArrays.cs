@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace polymorphism
+namespace task3_4
 {
-    sealed class OneDimensionalArray : ArrayBase
+    sealed class OneDimensionalArray : ArrayBase, IOneDimensionalArray
     {
         private int n;
 
@@ -72,7 +72,7 @@ namespace polymorphism
             }
         }
 
-        public override void PrintArray()
+        public override void Print()
         {
             Console.WriteLine("Printed array:");
             Console.WriteLine(string.Join(" ", array));

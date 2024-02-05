@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace polymorphism
+namespace task3_4
 {
     sealed class TwoDimensionalArray : ArrayBase
     {
@@ -74,7 +74,7 @@ namespace polymorphism
             }
         }
 
-        public override void PrintArray()
+        public override void Print()
         {
             Console.WriteLine("Normally printed array:");
             for (int i = 0; i < n; i++)
