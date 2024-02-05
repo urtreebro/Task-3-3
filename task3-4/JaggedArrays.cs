@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace task3_4
 {
-    sealed class JaggedArray : ArrayBase
+    sealed class JaggedArray : ArrayBase, IJagged
     {
         private OneDimensionalArray[] array;
 

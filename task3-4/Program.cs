@@ -58,6 +58,59 @@ namespace task3_4
             {
                 printer.Print();
             }
+
+            //More arrays
+            IOneDimensional[] onedims = new IOneDimensional[2];
+
+            OneDimensionalArray onedimarray2 = new();
+
+            onedims[0] = onedimarray;
+            onedims[1] = onedimarray2;
+
+            foreach (IOneDimensional one in onedims)
+            {
+                PrintArray(one.GetArrayAbs100());
+
+                PrintArray(one.GetArrayWithoutDuplicates());
+            }
+
+            ITwoDimensional[] twodims = new ITwoDimensional[2];
+
+            TwoDimensionalArray twodimarray2 = new();
+
+            twodims[0] = twodimarray;
+            twodims[1] = twodimarray2;
+
+            foreach (ITwoDimensional two in twodims)
+            {
+                two.GetMatrixDeterminant();
+            }
+
+            IJagged[] jaggeds = new IJagged[2];
+
+            JaggedArray jaggedarray2 = new();
+
+            jaggeds[0] = jaggedarray;
+            jaggeds[1] = jaggedarray2;
+
+            foreach (IJagged jagged in jaggeds)
+            {
+                PrintArray(jagged.GetAverageNumInNestedArrays());
+                jagged.ChangeArray();
+
+                jagged.ChangeArray();
+                jagged.Print();
+            }
+        }
+
+        public static void PrintArray(int[] array)
+        {
+            Console.WriteLine(string.Join(" ", array));
+        }
+
+        public static void PrintArray(double[] array)
+        {
+            Console.WriteLine(string.Join(" ", array));
         }
     }
 }

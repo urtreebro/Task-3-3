@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace task3_4
 {
-    sealed class OneDimensionalArray : ArrayBase, IOneDimensionalArray
+    sealed class OneDimensionalArray : ArrayBase, IOneDimensional
     {
         private int n;
 

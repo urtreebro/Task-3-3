@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace task3_4
 {
-    interface IOneDimensionalArray
+    interface IOneDimensional : IBase
     {
         int[] GetArrayAbs100();
 

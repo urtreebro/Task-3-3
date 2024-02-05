@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace task3_4
 {
-    sealed class TwoDimensionalArray : ArrayBase
+    sealed class TwoDimensionalArray : ArrayBase, ITwoDimensional
     {
         private int n;
 
