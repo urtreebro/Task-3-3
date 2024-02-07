@@ -81,10 +81,10 @@ namespace task3_4
                     foreach (IOneDimensional one in onedims)
                     {
                         Console.WriteLine("Array with numbers less than 100 abs:");
-                        PrintArray(one.GetArrayAbs100());
+                        one.GetArrayAbs100();
 
                         Console.WriteLine("Array without duplicates:");
-                        PrintArray(one.GetArrayWithoutDuplicates());
+                        one.GetArrayWithoutDuplicates();
                     }
                 }
                 else if (message == "t")
@@ -119,7 +119,7 @@ namespace task3_4
                     foreach (IJagged jagged in jaggeds)
                     {
                         Console.WriteLine("Averages in nested arrays:");
-                        PrintArray(jagged.GetAverageNumInNestedArrays());
+                        jagged.GetAverageNumInNestedArrays();
 
                         jagged.ChangeArray();
                         jagged.Print();
@@ -135,16 +135,6 @@ namespace task3_4
 
                 message = Console.ReadLine();
             }
-        }
-
-        public static void PrintArray(int[] array)
-        {
-            Console.WriteLine(string.Join(" ", array));
-        }
-
-        public static void PrintArray(double[] array)
-        {
-            Console.WriteLine(string.Join(" ", array));
         }
     }
 }

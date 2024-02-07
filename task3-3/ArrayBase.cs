@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace task3_4
 {
-    abstract class ArrayBase : IPrinter, IBase
+    abstract class ArrayBase : IBase
     {
         protected bool userInput = false;
 

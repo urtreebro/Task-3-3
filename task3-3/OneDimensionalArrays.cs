@@ -92,7 +92,7 @@ namespace task3_4
             return average;
         }
 
-        public int[] GetArrayAbs100()
+        public void GetArrayAbs100()
         {
             int newLength = n;
 
@@ -116,10 +116,11 @@ namespace task3_4
                     newIndex++;
                 }
             }
-            return newArray;
+            
+            Console.WriteLine(string.Join(" ", newArray));
         }
 
-        public int[] GetArrayWithoutDuplicates()
+        public void GetArrayWithoutDuplicates()
         {
             int newLength = n;
 
@@ -147,7 +148,8 @@ namespace task3_4
                     newIndex++;
                 }
             }
-            return newArray;
+
+            Console.WriteLine(string.Join(" ", newArray));
         }
     }
 }

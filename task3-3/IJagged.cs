@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace task3_4
 {
-    interface IOneDimensional : IBase
+    interface IJagged : IBase
     {
-        int[] GetArrayAbs100();
+        void GetAverageNumInNestedArrays();
 
-        int[] GetArrayWithoutDuplicates();
+        void ChangeArray();
     }
 }

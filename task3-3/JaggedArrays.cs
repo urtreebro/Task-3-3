@@ -88,7 +88,7 @@ namespace task3_4
             return average;
         }
 
-        public double[] GetAverageNumInNestedArrays()
+        public void GetAverageNumInNestedArrays()
         {
             double[] averageArray = new double[n];
 
@@ -103,7 +103,8 @@ namespace task3_4
                 double average = sum / array[i].Length;
                 averageArray[i] = average;
             }
-            return averageArray;
+
+            Console.WriteLine(string.Join(" ", averageArray));
         }
 
         public void ChangeArray()
