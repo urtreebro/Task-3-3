@@ -10,14 +10,12 @@ namespace task3_4
     {
         public void Print()
         {
-            Console.WriteLine("{0}, {1}, {2}, {3}, {4}, {5}, {6}",
-                DayOfWeek.Monday,
-                DayOfWeek.Tuesday,
-                DayOfWeek.Wednesday,
-                DayOfWeek.Thursday,
-                DayOfWeek.Friday,
-                DayOfWeek.Saturday,
-                DayOfWeek.Sunday);
+            foreach (var day in Enum.GetValues(typeof(DayOfWeek)))
+            {
+                Console.Write(day + " ");
+            }
+
+            Console.WriteLine();    
         }
 
         enum DayOfWeek
